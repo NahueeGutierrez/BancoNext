@@ -8,21 +8,15 @@ import NavbarLateral from '@/components/NavbarLateral/NavbarLateral';
 function CreditCardList({ creditCards }) {
   return (
     <>
-    <header>
-      <Header/>
-    </header>
-    <ul>
-      {creditCards.map((card) => (
-        <li key={card.id}>
-          <Link href={`/credit-cards/${card.id}`}>
-            {card.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
-    <main>
-  <NavbarLateral/>
-</main>
+      <ul>
+        {creditCards.map((card) => (
+          <li key={card.id}>
+            <Link href={`/credit-cards/${card.id}`}>
+              {card.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
@@ -30,27 +24,39 @@ function CreditCardList({ creditCards }) {
 // Página principal que muestra la lista de tarjetas de crédito
 function HomePage({ creditCards }) {
   return (
-    <div>
-      <h1>Tarjetas de Crédito</h1>
-      <CreditCardList creditCards={creditCards} />
-    </div>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main className='main-tarjetas'>
+        <NavbarLateral className="navbarlateral-tarjetas" />
+        <div className='tarjetas'>
+          <h1>Tus tarjetas</h1>
+          <CreditCardList creditCards={creditCards} />
+        </div>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 
 export async function getStaticProps() {
   const creditCards = [
-    { id: '4798-2011-8481-4822', name: 'Tarjeta de Débito',
-     user:'Carlos Embarrado'},
-    { id: '4213-7178-4718-6503', name: 'Tarjeta de Crédito',
-    user:'Carlos Embarrado' },
+    {
+      id: '4798-2011-8481-4822', name: 'Tarjeta de Débito',
+      user: 'Carlos Embarrado'
+    },
+    {
+      id: '4213-7178-4718-6503', name: 'Tarjeta de Crédito',
+      user: 'Carlos Embarrado'
+    },
   ];
 
   return {
     props: { creditCards },
   };
-<footer>
-  <Footer/>
-</footer>
 }
 
 export default HomePage;

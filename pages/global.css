@@ -339,36 +339,43 @@ p {
   margin-top: 20px;
 }
 
-.main-ayuda{
+.main-ayuda {
   display: flex;
   justify-content: space-between;
   align-items: flex;
 }
+
 .ayuda-banco h1 {
   padding-top: 30px;
   padding-bottom: 0px;
 }
+
 .ayuda-banco {
   font-family: 'Poppins', sans-serif;
   margin-left: 40px;
   ;
 }
+
 .ayuda-banco h4 {
   padding-top: 15px;
 }
+
 .ayuda-banco .fin {
-  font-weight: 500 ;
+  font-weight: 500;
   align-items: left;
   padding-bottom: 30px;
 }
+
 .ayuda-banco ul {
   list-style: none;
 }
+
 .ayuda-banco h5 {
   margin: 0;
   padding-bottom: 5px;
   padding-top: 5px;
 }
+
 .ayuda-banco p {
   size: 8px;
   font-weight: normal;
@@ -376,7 +383,8 @@ p {
   padding-top: 5px;
   padding-right: 30px;
 }
-.detalles-credito{
+
+.detalles-credito {
   margin-left: 400px;
   width: 330px;
   height: 180px;
@@ -384,27 +392,59 @@ p {
   background: #CD9159;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.cvv-externo{
+
+.cvv-externo {
   margin-left: 400px;
   width: 330px;
   height: 180px;
   border-radius: 15px;
   background: #CD9159;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  
+
 }
-.cvv-interno-negro{
+
+.cvv-interno-negro {
   width: 330px;
   height: 31px;
   background: #000;
 }
-.cvv-interno-gris{
+
+.cvv-interno-gris {
   width: 240px;
   height: 24px;
   background: #D3D3D3;
   margin-top: 20px;
   margin-left: 40px;
 }
+
+.main-tarjetas {
+  align-items:flex-start;
+  justify-content: flex-start;
+  background-color: hotpink;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.tarjetas {
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetas ul {
+  list-style: none;
+}
+
+.tarjetas li {
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+}
+
+
+
+
 
 
 /* @media (max-width: 560px){
