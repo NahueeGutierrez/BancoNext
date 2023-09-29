@@ -11,7 +11,7 @@ function Politicas() {
             </header>
             <main>
                 <NavbarLateral/>
-            </main>
+
                 <div className="info">
                     <h1>Politicas de Privacidad del Banco Barro</h1>
                     <p>Fecha de última actualización: 17 de agosto del 2023</p>
@@ -40,27 +40,29 @@ function Politicas() {
                         <li>Enviar comunicaciones relacionadas con servicios y ofertas especiales</li>
                         <li>Cumplir con las obligaciones legales y regulatorias</li>
                     </ul>
+                    <br></br>
                     <h3>Protección de la Información</h3>
+                    
                     <p>Mantenemos medidas de seguridad técnicas y organizativas para proteger la información personal de nuestros
                         clientes contra el acceso no autorizado, la divulgación o la alteración. Empleamos encriptación, firewalls y
                         procedimientos de seguridad avanzados para salvaguardar la información sensible.
                     </p>
+                    <br/>
                     <h3>Divulgación a Terceros</h3>
                     <p>
                         No compartimos información personal de nuestros clientes con terceros no afiliados, excepto cuando sea necesario
                         para proporcionar servicios solicitados por el cliente o cuando estemos obligados por la ley.
                     </p>
+                    <br/>
                     <h3>Derechos de Privacidad y Elección</h3>
                     <p>
                         Los clientes tienen el derecho de acceder, corregir y eliminar su información personal. También pueden optar por
-                        no recibir comunicaciones de marketing. Para ejercer estos derechos, los clientes pueden ponerse en contacto con
-                        nuestro equipo de atención al cliente.
+                        no recibir comunicaciones de marketing. 
                     </p>
+                    <br/>
                     <h3>Cambios en la Política de Privacidad</h3>
                     <p>
-                        Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cualquier cambio
-                        entrará en vigencia al ser publicado en nuestro sitio web. Se recomienda a los clientes revisar periódicamente
-                        esta política para mantenerse informados sobre cómo protegemos su información.
+                        Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. 
                     </p>
                     <p>
                         Si tienes alguna pregunta sobre nuestra Política de Privacidad o sobre cómo manejamos la información personal,
@@ -68,6 +70,7 @@ function Politicas() {
                         sitio web.
                     </p>
                 </div>
+                </main>
             <footer>
                 <Footer/>
             </footer>

@@ -10,7 +10,6 @@ function TyC() {
         </header>
         <main>
             <NavbarLateral/>
-        </main>
             <div className="info">
                 <h1>Términos y Condiciones</h1>
 
@@ -35,6 +34,8 @@ function TyC() {
                 <h3>7. Contacto</h3>
                 <p>Si tienes alguna pregunta sobre estos términos y condiciones, puedes contactarnos a través de la información proporcionada en nuestro sitio web.</p>
             </div>
+        </main>
+
             <footer>
                 <Footer/>
             </footer>

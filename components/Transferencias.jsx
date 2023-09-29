@@ -18,6 +18,13 @@ function Transferencias() {
                     <p>Transferiste $1.500 a José López el dia 18/7/2023</p>
                     <p>Transferiste $500 a Ivana Pepita el 15/8/2023</p>
                 </div>
+
+                <div>
+                    <h1>Mis facilidades</h1>
+                    <button type="button"> Mis cuentas disponibles</button>
+                    <br></br>
+                    <button type="button"> Mis Tarjetas</button>
+                </div>
             </section>
         </div>
         </>

@@ -197,6 +197,7 @@ h3 {
   margin-right: auto;
   margin-left: 2rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
   font-size: large;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
@@ -442,6 +443,55 @@ p {
   display: flex;
 }
 
+
+/* Estilo para el formulario */
+.form-ayuda {
+  max-width: 400px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: rgb(212, 203, 199);
+}
+
+/* Estilo para las etiquetas */
+.form-ayuda label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada de texto y el área de texto */
+.form-ayuda input[type="text"],
+.form-ayuda input[type="email"],
+.form-ayuda textarea {
+  width: 80%;
+  padding: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Estilo para el botón de enviar */
+.form-ayuda button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  
+}
+
+/* Estilo para el botón de enviar al pasar el cursor sobre él */
+.form-ayuda button[type="submit"]:hover {
+  background-color: #0056b3;
+}
 
 
 
