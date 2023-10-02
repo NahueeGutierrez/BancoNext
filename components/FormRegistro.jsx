@@ -23,7 +23,7 @@ function FormRegistro() {
             </form>
             <div className="link">
                 <p>¿Ya tenés cuenta? </p>
-                <Link href="/Ingreso">Iniciá sesión acá</Link>
+                <Link href="/Ingreso">Inicia sesión acá</Link>
             </div>
         </div>
         </>

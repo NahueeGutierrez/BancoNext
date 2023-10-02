@@ -10,7 +10,7 @@ const AumentarLimite = () => {
   };
 
   return (
-    <div>
+    <div className='aumentar-limite'>
       <h1>Solicitar Aumento de Límite</h1>
       {!solicitudEnviada ? (
         <div>
@@ -20,6 +20,7 @@ const AumentarLimite = () => {
       ) : (
         <p>Solicitud enviada. Espera la respuesta.</p>
       )}
+    
     </div>
   );
 };

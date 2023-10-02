@@ -1,35 +1,50 @@
+// function Transferencias() {
+//     return (
+//         <>
+//         <div className="container-pagos">
+
+//             <section className="secciones">
+//                 <div>
+                 
+//                 </div>
+//             </section>
+//         </div>
+//         </>
+
+//     );
+// }
+
+// export default Transferencias;
+
+import React from 'react';
+import Link from 'next/link'; // Importa Link
+import cuentas from '../pages/cuentas/cuentas'; // Ajusta la ruta según la ubicación real de tu archivo cuentas.js
+
 function Transferencias() {
-    return (
-        <>
-        <div className="container-pagos">
-
-            <section className="secciones">
-                <div>
-                    <h1>TODAS TUS TRANSFERENCIAS</h1>
-                </div>
-                <div>
-                    <p>Transferiste $25.000 a José López el 25/8/2023</p>
-                    <p>Transferiste $2.500 a Duki el 24/8/2023</p>
-                    <p>Juanita Rosario Ramírez te transfirió $45.000 el 21/8/2023</p>
-                    <p>Transferiste $3.600 a Claudio Romero el 21/8/2023</p>
-                    <p>Transferiste $25.000 a José López el 15/8/2023</p>
-                    <p>Abel Pintos te transfirió $80.000 el 27/7/2023</p>
-                    <p>Transferiste $30.100 a Juanita Rosario Ramírez el 18/7/2023</p>
-                    <p>Transferiste $1.500 a José López el dia 18/7/2023</p>
-                    <p>Transferiste $500 a Ivana Pepita el 15/8/2023</p>
-                </div>
-
-                <div>
-                    <h1>Mis facilidades</h1>
-                    <button type="button"> Mis cuentas disponibles</button>
-                    <br></br>
-                    <button type="button"> Mis Tarjetas</button>
-                </div>
-            </section>
-        </div>
-        </>
-
-    );
+  return (
+    <>
+      <div className="container-pagos">
+        <section className="secciones">
+          <div>
+            <h1>Detalles de las Cuentas</h1>
+            <ul>
+              {Object.values(cuentas).map((cuenta) => (
+                <li key={cuenta.id}>
+                  {/* Envuelve el nombre de la cuenta en un enlace */}
+                  <Link href={`/cuentas/${cuenta.id}`}>
+                    
+                      <p>Nombre: {cuenta.nombre}</p>
+                    
+                  </Link>
+                  <p>Saldo: ${cuenta.saldo}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </div>
+    </>
+  );
 }
 
 export default Transferencias;

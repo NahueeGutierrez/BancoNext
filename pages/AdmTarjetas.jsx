@@ -1,9 +1,12 @@
 import React from 'react';
-import Link from 'next/link'
-// esto es un componente
+import Link from 'next/link';
+import Header from "../components/Header/NavbarTop";
+import NavbarLateral from "../components/NavbarLateral/NavbarLateral";
+import Footer from "./Footer";
+
 function CreditCardList({ creditCards }) {
   return (
-    <ul>
+    <ol>
       {creditCards.map((card) => (
         <li key={card.id}>
           <Link href={`/credit-cards/${card.id}`}>
@@ -11,19 +14,30 @@ function CreditCardList({ creditCards }) {
           </Link>
         </li>
       ))}
-    </ul>
+    </ol>
   );
 }
 
-// Pagina principal que muestra la lista de tarjetas 
 function HomePage({ creditCards }) {
   return (
-    <div>
-      <h1>Tarjetas de Crédito</h1>
-      <CreditCardList creditCards={creditCards} />
-    </div>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <NavbarLateral />
+        <div className="tarjetas">
+          <h1>Tarjetas de Crédito</h1>
+          <CreditCardList creditCards={creditCards} />
+        </div>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
+
 export async function getStaticProps() {
   const creditCards = [
     { id: '4798-2011-8481-4822', name: 'Tarjeta de Débito' },
@@ -35,6 +49,4 @@ export async function getStaticProps() {
   };
 }
 
-
 export default HomePage;
-

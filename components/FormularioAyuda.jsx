@@ -1,4 +1,4 @@
-// components/HelpForm.js
+
 import React, { useState } from 'react';
 
 function FormAyuda() {
@@ -18,9 +18,9 @@ function FormAyuda() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviar los datos a un servidor o realizar acciones específicas.
+
     console.log(formData);
-    // Luego, puedes redirigir al usuario o mostrar un mensaje de confirmación.
+
   };
 
   return (
