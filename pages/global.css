@@ -105,6 +105,10 @@ input {
   margin-bottom: 1rem;
 }
 
+.button:hover{
+  background-color: #DFD7BF;
+}
+
 .cursiva {
   font-style: italic;
 }
@@ -320,7 +324,7 @@ input {
   padding-left: 10px;
 }
 
-button {
+/* button {
   border-radius: 5px;
   width: 150px;
   font-weight: 700;
@@ -329,11 +333,11 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: #0056b3;
-}
+} */
 
 p {
   font-weight: bold;
@@ -386,28 +390,40 @@ p {
 }
 
 .detalles-credito {
-  margin-left: 400px;
+  margin: 15px;
   width: 330px;
   height: 180px;
   border-radius: 15px;
   background: #CD9159;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.detalles-credito {
+  padding: 10px;
 }
 
 .cvv-externo {
-  margin-left: 400px;
   width: 330px;
   height: 180px;
   border-radius: 15px;
   background: #CD9159;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  padding-left: 0%;
+  margin: 15px;
 
 }
 
+.cvv-externo p {
+  padding-left: 10px;
+}
+
 .cvv-interno-negro {
-  width: 330px;
+  width: 340px;
   height: 31px;
   background: #000;
+  padding-left: 0%;
 }
 
 .cvv-interno-gris {
@@ -426,10 +442,41 @@ p {
 
 }
 
-.tarjetas {
-  background-color: lightblue;
+.opcion-pagar h1 {
+  margin-top: 40px;
+ 
+
+}
+.input-pago {
+  display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+.container-tarjetas{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 800px;
+  background-color: #F7F5EF;
+  border-radius: 26px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 0px 5px 1px #DFD7BF;
+}
+
+.tarjetas2{
+  display: flex; justify-content: space-around
+
 }
 
 .tarjetas ul {

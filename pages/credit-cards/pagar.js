@@ -8,17 +8,17 @@ const Pagar = ({onPagoRealizado}) => {
   }
 
   return (
-    <div>
+    <div className='opcion-pagar'>
       <h1>Realizar Pago</h1>
       {!pagoRealizado ? (
-        <div>
-          <input
+        <div >
+          <input className='input-pago'
             type="number"
             value={monto}
             onChange={(e) => setMonto(e.target.value)}
             placeholder="Monto a pagar"
-          />
-          <button onClick={procesarPago}>Pagar</button>
+          /> 
+          <button className='button' onClick={procesarPago}>Pagar</button>
         </div>
       ) : (
         <p>Pago realizado con éxito.</p>
